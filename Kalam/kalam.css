@@ -1,0 +1,90 @@
+html {
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #111927;
+    background-image: 
+        radial-gradient(at 47% 33%, hsl(303.96, 77%, 40%) 0, transparent 59%), 
+        radial-gradient(at 82% 65%, hsl(218.00, 39%, 11%) 0, transparent 55%);
+    height: 100%;
+    overflow: auto;
+}
+
+header {
+    text-align: center;
+    background-color: black;
+    color: hsl(303.96, 77%, 40%);
+    padding: 20px 0;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 60px;
+}
+
+section figure {
+    text-align: center;
+    margin: 20px 0;
+}
+
+img {
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+figcaption {
+    font-style: italic;
+    margin-top: 10px;
+    color: whitesmoke;
+}
+
+.rainbow-text {
+    background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+
+.main-content {
+    padding: 20px;
+    max-width: 800px;
+    margin: 10px auto 50px auto;
+    line-height: 1.6;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.main-content p {
+    margin-bottom: 15px;
+    color: whitesmoke;
+}
+
+footer {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 10px 0;
+    margin-top: 20px;
+    box-shadow: rgb(85, 91, 255) 0px 0px 0px 3px, rgb(31, 193, 27) 0px 0px 0px 6px, rgb(255, 217, 19) 0px 0px 0px 9px, rgb(255, 156, 85) 0px 0px 0px 12px, rgb(255, 85, 85) 0px 0px 0px 15px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    .main-content {
+        padding: 10px;
+    }
+}
